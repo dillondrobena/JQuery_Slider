@@ -1,0 +1,85 @@
+body {
+  overflow: hidden;
+}
+button, input {
+  opacity: .5;
+}
+
+button:hover, input:hover {
+  opacity: 1;
+}
+
+.active {
+  opacity: 1;
+}
+
+.fullScreen {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background-image: url("../assets/image_1.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#sliderNums {
+  width: 100%;
+  bottom: 5%;
+  position: absolute;
+  text-align: center;
+}
+
+#image-back {
+  position: absolute;
+  left: 5%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+#image-back input {
+  position: relative;
+  top: 30%;
+}
+
+#image-forward {
+  position: absolute;
+  right: 5%;
+  height: 100%;
+}
+
+#image-forward input {
+  position: relative;
+  top: 30%;
+}
+#description {
+  position: absolute;
+  width: 40%;
+  display: table;
+  text-align: center;
+  height: 15%;
+  border: 5px solid black;
+  top: -25%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  z-index: 1;
+}
+
+#innerWrapper {
+  display: table-cell;
+  position: relative;
+  vertical-align: middle;
+}
+#innerWrapper p {
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bolder;
+  font-size: 25px;
+}
